@@ -1,0 +1,22 @@
+Bellman ford algorithm
+In a graph with V vertices the longest graph can have V-1 edges
+A simple path means
+1.No repeated vertices
+2.No cycles.
+In the first iteration
+The outer loop represents the number of times we relax edges
+i=0 at most 1 edge
+i=1 at most 2 edges
+i=v-2 at most v-1 edges
+The inner jth loop represnts the number of edges
+suppose 
+0 to 1 (5)
+1 to 2 (3)
+2 to 3 (2)
+First outer loop i=0
+Now we are going through all edges
+0 to 1 (update dist[1]=5)
+1 to 2 (not updated because dist[1] was infinity at start.
+why second iteration?
+because shortest path distance algorithm may not fully propagate in the fisrt iteration due to edge ordering.
+
