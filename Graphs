@@ -9,3 +9,7 @@ we generally use two arrays visited[] and pathvisited[].One is to track visited 
 path visited nodes.
 What is a safe node?
 A node from which every possible path eventually leads to a termination node.(A node which has no outgoing edges).
+There are two ways to find eventual safe state in graphs.
+One is via dfs(If that node or any of it's neighbor is part of the cycle then it is not a safe state)
+Another is via topo sort reverse the edges of graphs and then perform topo sort. Insert the elements one by one 
+in the list as the indegree is becoming zero.)
